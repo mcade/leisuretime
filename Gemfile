@@ -9,6 +9,12 @@ group :development do
 	gem 'sqlite3', '1.3.8'
 end
 
+# Use Font Awesome for icons
+gem 'font-awesome-sass'
+
+# Use bootstrap for styling
+gem 'bootstrap-sass', '~> 3.1.1'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 

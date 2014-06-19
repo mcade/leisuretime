@@ -1,0 +1,164 @@
+@import "bootstrap";
+
+body {
+
+}
+.container {
+	padding: 0;
+}
+.center {
+  text-align: center;
+}
+.navbar {
+	margin-bottom: 0;
+}
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #999;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+/* footer */
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #999;
+}
+
+footer a {
+  color: #555;
+}
+
+footer a:hover {
+  color: #222;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 10px;
+}
+
+/* Set all parents to full height */
+html, body, 
+.container,
+.cbp-fbscroller,
+.cbp-fbscroller section { 
+	height: 100%;
+	width: 100%; 
+}
+
+/* The nav is fixed on the right side  and we center it by translating it 50% 
+(we don't know it's height so we can't use the negative margin trick) */
+.cbp-fbscroller > nav {
+	position: fixed;
+	z-index: 9999;
+	right: 3%;
+	top: 50%;
+	width: 26px;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.cbp-fbscroller > nav a {
+	display: block;
+	position: relative;
+	z-index: 9999;
+	color: #05243F;
+	width: 46px;
+	height: 46px;
+	outline: none;
+	margin: 25px 0;
+	background-color:transparent;
+}
+
+.no-touch .cbp-fbscroller > nav a:hover {
+	background: rgba(255,255,255,0.6);
+}
+
+.cbp-fbscroller > nav a.cbp-fbcurrent {
+	background: transparent;
+}
+ 
+/* background-attachment does the trick */
+.cbp-fbscroller section {
+    position: relative;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#fbsection1 {
+	background-image: image-url("blackltlogo3.png");
+}
+
+#fbsection2 {
+	background-image: image-url("redltlogo5.png");
+}
+
+#fbsection3 {
+	background-image: image-url("shirt1.png");
+}
+
+#fbsection4 {
+	background-image: image-url("shirt2.png");
+}
+
+#fbsection5 {
+	background-image: image-url("shirt3.png");
+}
+
+.navbtn:hover {
+	color: #89AFCF;
+}
+.navbar-brand {
+	padding: 0px 15px;
+	img {
+		margin-top: 10px;
+		height: 30px;
+	}
+}
+
+.cart {
+	position: fixed;
+	z-index: 10000;
+	padding-left: 7px;
+	padding-top: 3px;
+}
+.navbar {
+	border-radius: 0;
+}

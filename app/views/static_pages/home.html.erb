@@ -1,0 +1,23 @@
+<a href="#"><i class="fa fa-shopping-cart fa-4x cart"></i></a>
+<div id="cbp-fbscroller" class="cbp-fbscroller">
+	<nav>
+		<a href="#fbsection1" class="cbp-fbcurrent"><i class="fa fa-clock-o fa-3x navbtn"></i></a>
+		<a href="#fbsection2"><i class="fa fa-clock-o fa-3x navbtn"></i></a>
+		<a href="#fbsection3"><i class="fa fa-tag fa-3x navbtn"></i></a>
+		<a href="#fbsection4"><i class="fa fa-tag fa-3x navbtn"></i></a>
+		<a href="#fbsection5"><i class="fa fa-tag fa-3x navbtn"></i></a>
+	</nav>
+	<section id="fbsection1"></section>
+	<section id="fbsection2"></section>
+	<section id="fbsection3"></section>
+	<section id="fbsection4"></section>
+	<section id="fbsection5"></section>
+</div>
+<script>
+	var cbpFixedScrollLayout=(function(){var a={$sections:$("#cbp-fbscroller > section"),$navlinks:$("#cbp-fbscroller > nav:first > a"),currentLink:0,$body:$("html, body"),animspeed:650,animeasing:"easeInOutExpo"};function d(){a.$navlinks.on("click",function(){c(a.$sections.eq($(this).index()).offset().top);return false});a.$sections.waypoint(function(e){if(e==="down"){b($(this))}},{offset:"30%"}).waypoint(function(e){if(e==="up"){b($(this))}},{offset:"-30%"});$(window).on("debouncedresize",function(){c(a.$sections.eq(a.currentLink).offset().top)})}function b(e){a.$navlinks.eq(a.currentLink).removeClass("cbp-fbcurrent");a.currentLink=e.index("section");a.$navlinks.eq(a.currentLink).addClass("cbp-fbcurrent")}function c(e){a.$body.stop().animate({scrollTop:e},a.animspeed,a.animeasing)}return{init:d}})();
+</script>
+<script>
+	$(function() {
+		cbpFixedScrollLayout.init();
+	});
+</script>
